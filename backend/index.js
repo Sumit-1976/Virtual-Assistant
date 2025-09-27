@@ -10,9 +10,12 @@ import geminiResponse from "./gemini.js"
 
 const app = express()
 app.use(cors({
-    origin:"http://localhost:5173",
-    credentials: true
-}))
+  origin: [
+    "http://localhost:5173", 
+    "https://virtual-assistant-mocha-nu.vercel.app"
+  ],
+  credentials: true
+}));
 
 const port = process.env.PORT || 5000
 
