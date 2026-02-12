@@ -11,7 +11,7 @@ import geminiResponse from "./gemini.js"
 const app = express()
 const allowedOrigins = [
     "http://localhost:5173",
-    process.env.FRONTEND_URL
+    "https://virtual-assistant-mocha-nu.vercel.app"
 ];
 
 app.use(cors({
